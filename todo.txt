@@ -1,0 +1,1 @@
+make urls compatible with jekyll base url

@@ -8,5 +8,7 @@
     url: /installation
   - name: Configuration
     url: /configuration
+- name: Showcase
+  url: /showcase
 - name: Contributing
   url: /contributing

@@ -1,0 +1,6 @@
+- name: GitHub
+  image: /assets/logos/github-logo.png
+  url: https://github.com/hd-genius/jekyll-theme-nouveau
+- name: Website
+  image: /assets/logos/github-logo.png
+  url: https://nouveau.hdgenius.me

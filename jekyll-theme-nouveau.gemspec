@@ -17,10 +17,4 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-sass-converter", "~>3.1"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
-
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = 'https://rubygems.org'
-  else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  end
 end
