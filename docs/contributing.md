@@ -8,9 +8,12 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 
 To set up your environment to develop this theme, you need to install Ruby, Bundler, and the Bundler managed dependencies. This is verified to work with Ruby 3.3.8 and Bundler 4.0.6 but other versions may also be compatible.
 
+
 Follow [these instructions](https://www.ruby-lang.org/en/documentation/installation/) to install Ruby.
 
-Project dependencies, including jekyll, are managed through bundler. In most environments you can install bundler through ruby gems. To install bundler run `gem install bundler`. Once bundler is installed, install the project specific dependencies by running `bundle install`.
+Project dependencies, including jekyll, are managed through bundler. In most environments you can install bundler through ruby gems. To install bundler run `gem install bundler`.
+
+It is recommended, but not necessary, to configure bundler to install dependencies to a local project directory. To do this, run `bundle config set --local path 'vendor/bundle'`. Once bundler is setup, install the project specific dependencies by running `bundle install`.
 
 ### Building the theme gem
 
