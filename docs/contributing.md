@@ -5,14 +5,12 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## Development
 
 ### Environment setup
-To set up your environment to develop this theme, install Ruby and Bundler. This is verified to work with Ruby 3.3.8 and Bundler 4.0.6.
 
-To install the project specific dependencies, run `bundle install`.
+To set up your environment to develop this theme, you need to install Ruby, Bundler, and the Bundler managed dependencies. This is verified to work with Ruby 3.3.8 and Bundler 4.0.6 but other versions may also be compatible.
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+Follow [these instructions](https://www.ruby-lang.org/en/documentation/installation/) to install Ruby.
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-nouveau.gemspec` accordingly.
+Project dependencies, including jekyll, are managed through bundler. In most environments you can install bundler through ruby gems. To install bundler run `gem install bundler`. Once bundler is installed, install the project specific dependencies by running `bundle install`.
 
 ### Building the theme gem
 
