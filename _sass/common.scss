@@ -7,6 +7,11 @@
     border: 1px solid variables.$outline-color;
     margin: 0 0 variables.$block-spacing 0;
 
+    .full-width {
+        margin-left: #{variables.$block-horizontal-padding * -1};
+        margin-right: #{variables.$block-horizontal-padding * -1};
+    }
+
     & > :first-child {
         margin-top: 0;
     }
