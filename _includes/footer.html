@@ -3,7 +3,18 @@
         <div id="site-footer-social-links" aria-label="social media links">
             {% for link in site.data.social_links %}
                 <a class="social-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-                    <img class="social-logo" src="{{ link.image }}" alt="{{ link.name }}"/>
+                    {% case link.type %}
+                        {% when 'facebook' %}
+                            <img class="social-logo" src="/assets/logos/facebook-logo.svg" alt="facebook"/>
+                        {% when 'github' %}
+                            <img class="social-logo" src="/assets/logos/github-logo.svg" alt="github"/>
+                        {% when 'thingiverse' %}
+                            <img class="social-logo" src="/assets/logos/thingiverse-logo.svg" alt="thingiverse"/>
+                        {% when 'twitter' or 'x' %}
+                            <img class="social-logo" src="/assets/logos/twitter-logo.svg" alt="twitter"/>
+                        {% else %}
+                            <img class="social-logo" src="{{ link.image }}" alt="{{ link.name }}"/>
+                    {% endcase %}
                 </a>
             {% endfor %}
         </div>
