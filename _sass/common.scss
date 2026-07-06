@@ -1,5 +1,9 @@
 @use 'variables';
 
+@function invert($dimension) {
+  @return #{$dimension * -1};
+}
+
 .block-element {
     background-color: variables.$block-background-color;
     border-radius: variables.$block-border-radius;
@@ -7,34 +11,29 @@
     border: 1px solid variables.$outline-color;
     margin: 0 0 variables.$block-spacing 0;
 
-    .full-width {
-        margin-left: #{variables.$block-horizontal-padding * -1};
-        margin-right: #{variables.$block-horizontal-padding * -1};
-    }
-
-    & > :first-child {
-        margin-top: 0;
-    }
-    
     & > :last-child {
         margin-bottom: 0;
     }
-
-    &.secondary {
-        border-radius: #{variables.$block-border-radius * 0.75};
-        background-color: variables.$secondary-block-background-color;
-    }
-}
-
-.section-header {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid variables.$outline-color;
-    padding: 0px variables.$block-horizontal-padding 1rem;
-    margin: 0px #{variables.$block-horizontal-padding * -1};
     
-    h1, h2, h3, h4, h5, h6 {
-        text-align: center;
-        margin: 0px;
+    .section-header {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid variables.$outline-color;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        margin: invert(variables.$block-horizontal-padding);
+        margin-top: invert(variables.$block-vertical-padding);
+        margin-bottom: 0px;
+        
+        h1, h2, h3, h4, h5, h6 {
+            text-align: center;
+            margin: 0px;
+        }
+    }
+    
+    .full-width {
+        margin-left: invert(variables.$block-horizontal-padding);
+        margin-right: invert(variables.$block-horizontal-padding);
     }
 }
+
