@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("nav-menu-button").addEventListener("click", onNavToggleButtonClicked);
     document.getElementById("nav-close-button").addEventListener("click", onNavCloseButtonClicked);
-    console.log('here')
 });
 
 function onNavToggleButtonClicked() {
