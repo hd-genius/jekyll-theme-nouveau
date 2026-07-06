@@ -30,6 +30,14 @@
             margin: 0px;
         }
     }
+
+    .section-footer {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        margin: invert(variables.$block-horizontal-padding);
+        margin-top: 0px;
+        margin-bottom: invert(variables.$block-vertical-padding);
+    }
     
     .full-width {
         margin-left: invert(variables.$block-horizontal-padding);
