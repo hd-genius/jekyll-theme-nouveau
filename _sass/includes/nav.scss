@@ -8,7 +8,8 @@
 // this wrapper is responsible for still displacing other elements on the page
 #site-nav-menu-displacement-wrapper {
     --expanded-nav-width: 30ch;
-    flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
     z-index: 10000;
     position: sticky;
     top: 0;
