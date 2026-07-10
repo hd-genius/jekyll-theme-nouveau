@@ -4,26 +4,27 @@
   @return #{$dimension * -1};
 }
 
+$block-outline: 1px solid variables.$outline-color;
+
 .block-element {
     background-color: variables.$block-background-color;
     border-radius: variables.$block-border-radius;
     padding: variables.$block-vertical-padding variables.$block-horizontal-padding;
-    border: 1px solid variables.$outline-color;
+    border: $block-outline;
     margin: 0 0 variables.$block-spacing 0;
 
     & > :last-child {
         margin-bottom: 0;
     }
     
-    .section-header {
+    .block-header {
         display: flex;
         flex-direction: column;
-        border-bottom: 1px solid variables.$outline-color;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding: 1.5rem;
         margin: invert(variables.$block-horizontal-padding);
         margin-top: invert(variables.$block-vertical-padding);
         margin-bottom: 0px;
+        border-bottom: $block-outline;
         
         h1, h2, h3, h4, h5, h6 {
             text-align: center;
@@ -31,12 +32,17 @@
         }
     }
 
-    .section-footer {
+    .block-footer {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         margin: invert(variables.$block-horizontal-padding);
         margin-top: 0px;
         margin-bottom: invert(variables.$block-vertical-padding);
+        border-top: $block-outline;
+    }
+
+    .divided-section + .divided-section {
+        border-top: $block-outline;
     }
     
     .full-width {

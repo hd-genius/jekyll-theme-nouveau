@@ -2,13 +2,12 @@
 
 {% if recent_posts.size > 0 %}
     <section id="recent-posts" class="block-element" aria-label="recent posts">
-        <header class="section-header">
+        <header class="block-header">
             <h1>Recent Posts</h1>
         </header>
 
         {% for post in recent_posts | limit: 5 %}
-            <div class="area-separator"></div>
-            <div class="post-preview">
+            <div class="post-preview divided-section">
                 <h2 class="post-preview-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 <div class="post-preview-data">
                     <span class="post-preview-author">{{ post.author }}</span>
