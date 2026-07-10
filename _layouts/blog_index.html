@@ -3,27 +3,15 @@ title: Blog
 layout: page
 ---
 
-<link href="/assets/styles/layouts/blog_index.css" rel="stylesheet" type="text/css"/>
-<link href="/assets/styles/pagination.css" rel="stylesheet" type="text/css""/>
+<link href="/assets/styles/components/post_preview.css" rel="stylesheet" type="text/css"/>
+<link href="/assets/styles/components/pagination.css" rel="stylesheet" type="text/css""/>
 
 <header class="block-header">
     <h1>{{ page.title }}</h1>
 </header>
 
 {% for post in paginator.posts %}
-    <div class="post-preview full-width divided-section">
-        <div class="post-preview-header">
-            <div class="post-preview-identifying-data">
-                <h2 class="post-preview-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <div class="post-preview-tags"></div>
-            </div>
-            <div class="post-preview-authoring-data">
-                <span class="post-preview-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-                <span class="post-preview-author">{{ post.author }}</span>
-            </div>
-        </div>
-        <p class="post-preview-summary">{{ post.description }}</p>
-    </div>
+    {% include post_preview.html post=post %}
 {% endfor %}
 
 <div id="pagination-nav" class="block-footer">
