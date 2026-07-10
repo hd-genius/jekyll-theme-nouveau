@@ -9,6 +9,7 @@
 #site-nav-menu-displacement-wrapper {
     --expanded-nav-width: 30ch;
     flex-grow: 0;
+    flex-shrink: 0;
     z-index: 10000;
     position: sticky;
     top: 0;

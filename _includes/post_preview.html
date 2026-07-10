@@ -1,0 +1,13 @@
+<div class="post-preview full-width divided-section">
+    <div class="post-preview-header">
+        <div class="post-preview-identifying-data">
+            <h2 class="post-preview-title"><a href="{{ include.post.url }}">{{ include.post.title }}</a></h2>
+            <div class="post-preview-tags"></div>
+        </div>
+        <div class="post-preview-authoring-data">
+            <span class="post-preview-date">{{ include.post.date | date: "%Y-%m-%d" }}</span>
+            <span class="post-preview-author">{{ include.post.author }}</span>
+        </div>
+    </div>
+    <p class="post-preview-summary">{{ include.post.description }}</p>
+</div>

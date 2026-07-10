@@ -1,0 +1,42 @@
+---
+---
+
+.post-preview {
+  padding: 1.5rem 2rem;
+}
+
+.post-preview-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.post-preview-title {
+  margin: 0px;
+}
+
+.post-preview-authoring-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 0.5rem;
+  text-align: end;
+  flex-shrink: 0;
+}
+
+.post-preview-summary {
+  margin-bottom: 0px;
+}
+
+// breakpoint where header becomes vertical
+@media (max-width: 700px) {
+  .post-preview-header {
+    flex-direction: column;
+  }
+
+  .post-preview-authoring-data {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
