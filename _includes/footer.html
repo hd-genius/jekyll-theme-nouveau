@@ -7,13 +7,15 @@
                         {% when 'facebook' %}
                             <img class="social-logo" src="/assets/logos/facebook-logo.svg" alt="facebook"/>
                         {% when 'github' %}
-                            <img class="social-logo" src="/assets/logos/github-logo.svg" alt="github"/>
+                            <img class="social-logo" src="/assets/logos/github-logo.png" alt="github"/>
+                        {% when 'npm' %}
+                            <img class="social-logo" src="/assets/logos/npm-logo.svg" alt="npm"/>
                         {% when 'thingiverse' %}
                             <img class="social-logo" src="/assets/logos/thingiverse-logo.svg" alt="thingiverse"/>
                         {% when 'twitter' or 'x' %}
                             <img class="social-logo" src="/assets/logos/twitter-logo.svg" alt="twitter"/>
                         {% else %}
-                            <img class="social-logo" src="{{ link.image }}" alt="{{ link.name }}"/>
+                            <img class="social-logo" src="" alt="{{ link.name }}"/>
                     {% endcase %}
                 </a>
             {% endfor %}

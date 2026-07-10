@@ -1,6 +1,10 @@
 - type: facebook
   url: https://github.com/hd-genius/jekyll-theme-nouveau
+- type: github
+  url: https://github.com/hd-genius/jekyll-theme-nouveau
+- type: npm
+  url: https://github.com/hd-genius/jekyll-theme-nouveau
 - type: twitter
-  url: https://twitter.com/hdgenius
+  url: https://github.com/hd-genius/jekyll-theme-nouveau
 - type: website
-  url: https://nouveau.hdgenius.me
+  url: hhttps://github.com/hd-genius/jekyll-theme-nouveau
